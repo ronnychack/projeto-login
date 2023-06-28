@@ -60,3 +60,51 @@ div#formulario > h1{
 div#formulario > p {
     font-size: 0.8em;
 }
+form > div.campo{
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;/*Coloca altura 40*/
+    border-radius: 5px; /*coloca borda arredondada*/
+    margin: 5px 0px;/*Coloca margin externa e separa login e senha tao grudado*/
+}
+div.campo > label{
+    display: none;
+ }
+
+form >input[type=submit]{
+    display:block; /*Coloco ele sozinho como uma caixa*/
+    font-size: 1em;
+    width: 100%;/*pra ele ocupar 100 do container da caixa ele irá esticar*/
+    height: 40px;/*Coloco altura no botao*/
+    background-color: #49a09d;/*Coloca cor de fundo do botao verde*/
+    color: white;/*Coloco cor da fonte do texto de branco*/
+    border: none;/*Tira linha ao redor do botao ou borda*/
+    border-radius: 5px;/*Coloco borda arrendoda no botao*/
+    cursor: pointer;/*Coloca maozinha no botao*/
+
+}
+
+form > input[type=submit]:hover{
+    background-color: #2d6462;
+}
+form > a.botao{
+    display: block;
+    text-align: center; /*Texto no centro*/
+    font-size: 1em;/*tamanho da fonte*/
+    width: 100%;/*largura maxima do botao*/
+    height: 40px;/*altura de 40px do botao*/
+    padding-top: 5px;/*Pequena distancia interna em cima*/
+    margin-top: 5px;/*Pequena distancia em cima*/
+    background-color: white;
+    color: #2d6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;/*botão borda arredondada*/
+    text-decoration: none;/*remove sublinhado do link, botao é um link*/
+}
+form > a.botao:hover{
+    background-color: #6cd3cf;
+}
+form > a.botao > i{
+    font-size: 1.7em;
+}
