@@ -2,13 +2,48 @@
 /*
 Pequenas: telas até 600px
 Celular: 600px até 768px
-Tablet: 768px até 992px
+Tablet: 768px até 992px usando este.
 Desktop 992px até 1200px
 Grande Telas acima de 1200px
 */
 
-@media screen and (min-width:768px) and (max-width:992){
+@media screen and (min-width:768px) and (max-width:992px){
+    body {
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
     section#login{
-        width: 90vw;
+        width: 80vw;/*Aqui tamanho da tela em relacao html */
+    }
+
+    section#login > div#imagem{
+        float: left;
+        width: 30%;/*Largura da box 30 porcento esquerda para direita*/
+        height: 100%;/*Altura 100 porcento de cima para baixo pega toda*/
+    }
+    section#login > div#formulario{
+        float: right;
+        width: 70%;/*largura da direita para esquerda */
+   
+    }
+}
+
+@media screen and (min-width:992px){
+    
+    body {
+        background-image: linear-gradient(to top,#49a09d,#5f2c82);
+    }
+       section#login{
+        width: 950px;
+    }
+
+    section#login > div#imagem{
+        float: left;/*Imagem aparece apos 992px esquerda para direita*/
+        width: 50%; /*50 porcento de largura da tela esquerda pra direita imagem*/
+        height: 100%;/*Altura da imagem do inicio de cima pra baixo ate fim*/
+    }
+    section#login >div#formulario{
+        float: right;/*Formulario ira aparece da direita para esquerda*/
+        width: 50%;/*formulario aparece 50 porcento direita para esquerda*/
+         
     }
 }

@@ -37,6 +37,9 @@ section#login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);/*coloca sombra nas bordas*/
+
+    transition: width 0.3s , height 0.3s;/*Tempo para mudar os tamanhos da telas*/
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
