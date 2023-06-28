@@ -8,11 +8,12 @@ Grande Telas acima de 1200px
 */
 
 @media screen and (min-width:768px) and (max-width:992px){
-    body {
+    body {/*Configuraçao para TABLET*/
         background-image: linear-gradient(to top,#49a09d,#5f2c82);
     }
     section#login{
         width: 80vw;/*Aqui tamanho da tela em relacao html */
+        height: 270px;/*Define altura do login apenas no tablet */
     }
 
     section#login > div#imagem{
@@ -28,12 +29,13 @@ Grande Telas acima de 1200px
 }
 
 @media screen and (min-width:992px){
-    
+            /*Aqui tamanho da tela  PC OU MAIOR TV */
     body {
         background-image: linear-gradient(to top,#49a09d,#5f2c82);
     }
        section#login{
         width: 950px;
+        height: 310px;/*define altura do form login */
     }
 
     section#login > div#imagem{
@@ -50,6 +52,7 @@ Grande Telas acima de 1200px
         font-size: 2em;
     }
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1em;
+        margin: 20px 0px;
     }
 }
