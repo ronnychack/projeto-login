@@ -37,13 +37,19 @@ Grande Telas acima de 1200px
     }
 
     section#login > div#imagem{
-        float: left;/*Imagem aparece apos 992px esquerda para direita*/
+        float: right;/*Imagem aparece apos 992px esquerda para direita*/
         width: 50%; /*50 porcento de largura da tela esquerda pra direita imagem*/
         height: 100%;/*Altura da imagem do inicio de cima pra baixo ate fim*/
     }
     section#login >div#formulario{
-        float: right;/*Formulario ira aparece da direita para esquerda*/
+        float: left;/*Formulario ira aparece da direita para esquerda*/
         width: 50%;/*formulario aparece 50 porcento direita para esquerda*/
          
+    }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }
