@@ -29,7 +29,7 @@ section#login {
     position: absolute;
     top: 50%;/*Centralizar login*/
     left: 50%;/*Centralizar login*/
-    transform: translate(-50%,-50%);/*centralizar login*/
+    
     overflow: hidden;/*Tudo que tiver fora da borda vai ficar escondido */
 
     background-color: white;
@@ -40,6 +40,7 @@ section#login {
 
     transition: width 0.3s , height 0.3s;/*Tempo para mudar os tamanhos da telas*/
     transition-timing-function: ease;
+    transform: translate(-50%,-50%);/*centralizar login*/
 }
 
 section#login > div#imagem {
@@ -84,10 +85,10 @@ div.campo > label{
     font-size: 1em;
     width:calc(100% - 45px);/*Personalizar tamanho com calculo pix*/
     height: 100%;
-    transform: translatey(-14px);
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translatey(-14px);/*Transform sempre ultima linha*/
  }
 
  div.campo > input:focus-within{
